@@ -1,4 +1,5 @@
 <?php
+/*
 
 namespace App\Http\Controllers;
 
@@ -46,3 +47,4 @@ class UserController extends User
         return response()->json($message, 200);
     }
 }
+*/
