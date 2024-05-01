@@ -38,7 +38,7 @@ class UserController extends User
     public function delete(Request $request)
     {
         $message = 'user not found';
-        $user = Task::whereId($request->id)->first();
+        $user = User::whereId($request->id)->first();
         if (!is_null($user)) {
             $user->delete();
             $message = 'user deleted successfully';

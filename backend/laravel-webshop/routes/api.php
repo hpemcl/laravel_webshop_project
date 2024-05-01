@@ -6,7 +6,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+/*
 Route::get('user', [UserController::class, 'index']);
 Route::post('user', [UserController::class, 'store']);
 Route::post('user/delete', [UserController::class, 'delete']);
 Route::post('user/complete', [UserController::class, 'complete']);
+*/
+
+Route::get('users', 'App/Http/Controllers/UserController@getUsers');
