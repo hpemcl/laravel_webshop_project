@@ -16,4 +16,17 @@ class ApiController extends Controller
     public function getProducts() {
         return response()->json(Products::all());
     }
+    public function getProductById($id)
+    {
+        $product = Products::find($id);
+
+        if (!$product) {
+            return response()->json(['message' => 'Product not found'], 404);
+        }
+
+        return response()->json($product);
+    }
+
+    
+    
 }

@@ -21,3 +21,5 @@ Route::get('test', function () {
 
 
 Route::get('products', [App\Http\Controllers\ApiController::class, 'getProducts']);
+
+Route::get('/products/{id}', [App\Http\Controllers\ApiController::class, 'getProductById']);
