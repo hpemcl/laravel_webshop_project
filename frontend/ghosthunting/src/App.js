@@ -1,8 +1,14 @@
 import './App.css';
 
+
+
 function App() {
   return (
-    <div></div>
+    <div>
+      <h1 className="text-3xl font-bold underline text-cyan-400">
+      Hello world!
+        </h1>
+    </div>
   );
 }
 
